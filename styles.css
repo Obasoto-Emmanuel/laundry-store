@@ -52,7 +52,7 @@ body {
   }
 
   .hero {
-  background-image: url(Laundry.avif);
+  background-image: url(Images/lau);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -94,7 +94,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: #1e90ff;
-    color: white;
+    color: #fff;
     text-decoration: none;
     margin-top: 20px;
     border-radius: 5px;
