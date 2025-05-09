@@ -1,51 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Laundry Service</title>
-  <link rel="stylesheet" href="booking.css">
+  <link rel="stylesheet" href="booking.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="shortcut icon" href="favicon_io/favicon-16x16.png" type="image/x-icon"/>
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo"><img src="pater smiles logo.jpg" alt=""></div>
-      <ul class="nav-links">
+      <div class="logo"><img src="new logo.png" alt="Logo" class="logo"></div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="booking.html">Booking</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </nav>  
   </header>
 
   <section class="booking" id="booking">
     <h2>Book a Service</h2>
     <form id="bookingForm">
       <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>  
       <input type="text" name="address" placeholder="Your Address" required>
       <select name="service" required>
-            <option value="">Select a Service</option>
-            <option value="wash">Wash & Fold</option>
-            <option value="dry">Dry Cleaning & Ironing</option>
-            <option value="all">Wash and Ironing</option>
+        <option value="">Select a Service</option>
+        <option value="Wash & Fold">Wash & Fold</option>
+        <option value="Dry Cleaning & Ironing">Dry Cleaning & Ironing</option>
+        <option value="Wash and Ironing">Wash and Ironing</option>
       </select>
-      <input type="date" name="date" required placeholder="date">
+      <input type="date" name="date" required>
       <button type="submit">Submit</button>
     </form>
   </section>
 
+  <!-- Hidden Print Section -->
+  <div id="printSection" style="display: none;">
+    <div style="text-align: center;">
+      <img src="new logo.png" alt="Pater Smiles Logo" style="width: 100px;">
+      <h2>Pater Smiles Cleaning Services</h2>
+      <p>Metro Plaza Opp. National ID Office, Shendam Road, Lafia</p>
+      <p>Email: patersmilescleaningservices@gmail.com | Phone: 07079776283</p>
+      <hr>
+    </div>
+    <h3>Booking Receipt</h3>
+    <p><strong>Name:</strong> <span id="printName"></span></p>
+    <p><strong>Address:</strong> <span id="printAddress"></span></p>
+    <p><strong>Service:</strong> <span id="printService"></span></p>
+    <p><strong>Date:</strong> <span id="printDate"></span></p>
+  </div>
+
   <footer>
     <div class="foot-decor">
-        <div class="mail"><p class="p2">Mail Us@</p><a href="mailto: www.patersmilescleaningservices@gmail.com " class="Email">www.patersmilescleaningservices@gmail.com</a>
-        </div>
-        <div>
-            <p class="p2">Contact Us:</p><a href="tel:+2347079776283" class="phone-no">07079776283</a>, <a href="tel:+2348104474900" class="phone-no">08104474900</a>, <a href="tel:+2349031943825" class="phone-no">09031943825</a>
-        </div>
-        <div class="address"><p class="p2">Address</p>Metro Plaza Opposite National ID Card <br>
-            Office Shendam Road, Lafia</div>
+      <div class="mail">
+        <p class="p2">Mail Us@</p>
+        <a href="mailto:patersmilescleaningservices@gmail.com" class="Email">patersmilescleaningservices@gmail.com</a>
+      </div>
+      <div>
+        <p class="p2">Contact Us:</p>
+        <a href="tel:+2347079776283" class="phone-no">07079776283</a>, 
+        <a href="tel:+2348104474900" class="phone-no">08104474900</a>, 
+        <a href="tel:+2349031943825" class="phone-no">09031943825</a>
+      </div>
+      <div class="address">
+        <p class="p2">Address</p>
+        Metro Plaza Opposite National ID Card <br>Office Shendam Road, Lafia
+      </div>
     </div>
-</footer>
-  <script src="script.js"></script>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+  <script src="booking.js"></script>
 </body>
 </html>

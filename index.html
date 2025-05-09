@@ -6,43 +6,59 @@
   <title>Laundry Service</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="shortcut icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo"><img src="pater smiles logo.jpg" alt="" class="logo"></div>
-      <ul class="nav-links">
+      <div class="logo"><img src="new logo.png" alt="Logo" class="logo"></div>
+    
+      <!-- Hamburger icon for mobile -->
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+              <!-- Mobile Dropdown Menu -->
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="booking.html">Booking</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </nav>  
+      </div>
   </header>
 
-  <section class="hero" id="home">
-    <h1>Welcome to Pater Smiles Laundry</h1>
-    <p>Let Us Handle Your Laundry, because Your <br><span>Not Alone</span></p>
-    <a href="booking.html" class="cta-button">Book Now</a>
-  </section>
+<section class="hero" id="home">
+  <div class="typing-text">
+    <h1>Welcome to Pater Smiles Laundry.</h1>
+  </div>
+  <p>Let Us Handle Your Laundry, because Your're <br><span>Not Alone</span></p>
+  <a href="booking.html" class="cta-button">Book Now</a>
+</section>
 
   <section class="services" id="services">
     <h2>Our Process</h2>
     <div class="service-cards">
       <div class="card1">
-        <i class="fab fa-box"></i>
-        <h3>Wash & Fold</h3>
-        <p>Fresh and neatly folded clothes delivered to you.</p>
+        <img src="washing-machine.png" alt="" class="icon">
+        <h4>Wash & Fold</h4>
+        <h5>Fresh and neatly folded clothes delivered to you.</h5>
       </div>
       <div class="card2">
-        <a href="https://www.flaticon.com/free-icons/tshirt" title="tshirt icons">Tshirt icons created by bqlqn - Flaticon</a>
-        <h3>Dry Cleaning</h3>
-        <p>Gentle care for your delicate garments.</p>
+        <img src="service.png" alt="" class="icon">
+        <h4>Dry Cleaning</h4>
+        <h5>Gentle care for your delicate garments.</h5>
       </div>
       <div class="card3">
-        <h3>Ironing</h3>
-        <p>Sharp and crease-free clothes for your day.</p>
+        <img src="iron.png" alt="" class="icon">
+        <h4>Ironing</h4>
+        <h5>Sharp and crease-free clothes for your day.</p>
+      </div>
+        <div class="card3">
+        <img src="delivery.png" alt="" class="icon">
+        <h4>Fast Delivery</h4>
+        <h5>Sharp and crease-free clothes for your day.</p>
       </div>
     </div>
   </section>
@@ -56,19 +72,43 @@
         <img src="laundry1.png" alt="">
       </div>
       <div class="card">
-        <div>
+        <div class="card-text">
           <h3>Wash & Fold</h3>
-          <p>Fresh and neatly folded clothes delivered to you.</p>
+          <p class="p2">Fresh and neatly folded clothes delivered to you.</p>
         </div>
       </div>
     </div>
     <div class="service-cards2" id="services">
       <div class="card">
         <h3>Cloth Ironing</h3>
-        <p>Gentle care for your delicate garments.</p>
+        <p class="p2">Gentle care for your delicate garments.</p>
       </div>
       <div class="Image-wash">
         <img src="Laundry2.png" alt="">
+      </div>
+    </div>
+  </section>
+
+    <section class="services3" id="services">
+    <h4>Our Services</h4>
+    <div class="service-cards3">
+      <div class="Image-wash">
+        <img src="laundry1.png" alt="">
+      </div>
+      <div class="card4">
+        <div class="card-text">
+          <h3>Wash & Fold</h3>
+          <p>Fresh and neatly folded clothes delivered to you.</p>
+        </div>
+      </div>
+    </div>
+    <div class="service-cards3" id="services">
+      <div class="Image-wash">
+        <img src="Laundry2.png" alt="">
+      </div>
+      <div class="card4">
+        <h3>Cloth Ironing</h3>
+        <p>Gentle care for your delicate garments.</p>
       </div>
     </div>
   </section>
@@ -83,11 +123,16 @@
     </form>
   </section>
 
-  <footer>
-    <p>© 2025 CleanPro Laundry. All rights reserved.</p>
-    <div class="socials">
-      <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
-    </div>
-  </footer>
+    <footer>
+        <div class="foot-decor">
+            <div class="mail"><p class="p2">Mail Us@</p><a href="mailto: www.patersmilescleaningservices@gmail.com " class="Email">www.patersmilescleaningservices@gmail.com</a>
+            </div>
+            <div>
+                <p class="p3">Contact Us:</p><a href="tel:+2347079776283" class="phone-no">07079776283</a>, <a href="tel:+2348104474900" class="phone-no">08104474900</a>, <a href="tel:+2349031943825" class="phone-no">09031943825</a>
+            </div>
+            <div class="address"><p class="p2">Address</p>Metro Plaza Opposite National ID Card <br>
+                Office Shendam Road, Lafia</div>
+        </div>
+    </footer>
 </body>
 </html>
