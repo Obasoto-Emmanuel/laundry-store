@@ -378,7 +378,7 @@ align-items: center;
 
   .nav-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: auto;
     background-color: white;
     position: absolute;
