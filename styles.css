@@ -379,20 +379,26 @@ footer {
   cursor: pointer;
   color: #1e90ff;
 }
+}
 
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    opacity: 100%;
   }
 
   .nav-links {
     display: flex;
     flex-direction: row;
-    width: auto;
+    height: 10px;
+    width: 260px;
     background-color: white;
     position: absolute;
-    top: 70px;
-    left: 0;
+    top: 50px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 1em 0;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
@@ -431,7 +437,7 @@ footer {
   input, textarea, button {
     font-size: 14px;
   }
-}
+
 
 @media (max-width: 480px) {
   .laundry-image{
@@ -470,6 +476,7 @@ footer {
   }
 
   .hero {
+    margin-top: 30px;
     font-size: 12px;
     padding: 30px 2.5px;
     font-size: 12px;

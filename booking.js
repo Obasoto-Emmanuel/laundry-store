@@ -34,9 +34,3 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
 
   this.reset();
 });
-
-// Toggle mobile navigation
-document.getElementById("hamburger").addEventListener("click", function () {
-  const navLinks = document.getElementById("navLinks");
-  navLinks.classList.toggle("active");
-});
