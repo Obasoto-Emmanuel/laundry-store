@@ -1,12 +1,12 @@
 // Initialize EmailJS with your public key
 (function () {
-  emailjs.init("O2Zqfoem_GxQ1Kc6Q");
+  emailjs.init("si48_YhBoBIsHprQo");
 })();
 
 document.getElementById("bookingForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  emailjs.sendForm("service_p6zj4fg", "template_txxi66q", this).then(
+  emailjs.sendForm("service_758oowv", "template_txxi66q", this).then(
     function (response) {
       console.log("SUCCESS!", response);
       alert("Your booking has been submitted successfully!");
